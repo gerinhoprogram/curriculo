@@ -1,0 +1,304 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+.acordeao {width:100%; margin-bottom: 100px}
+
+.label-float {
+  position: relative !important;
+  padding-top: 15px !important;
+  width: 100% !important; }
+
+.label-float .meuInput {
+  border: 1px solid rgb(49, 192, 204) !important;
+  border-radius: 5px  !important;
+  outline: none !important;
+  padding-left: 10px !important;
+  padding-top: 20px !important;
+  font-size: 11pt !important;
+  transition: all .1s linear !important;
+  -webkit-transition: all .1s linear !important;
+  -moz-transition: all .1s linear !important;
+  -webkit-appearance: none !important;
+  color: #000; }
+
+.label-float .meuInput:focus {
+  border: 2px solid #000 !important; }
+
+.label-float .meuInput::placeholder {
+  color: #000 !important; }
+
+.label-float .meuLabel {
+  pointer-events: none !important;
+  position: absolute !important;
+  top: calc(50% - 8px) !important;
+  left: 15px !important;
+  transition: all .1s linear !important;
+  -webkit-transition: all .1s linear !important;
+  -moz-transition: all .1s linear !important;
+  background-color: white !important;
+  padding: 5px !important;
+  box-sizing: border-box !important;
+  background-color: #fff !important;
+  z-index: 300;
+  color: rgb(49, 192, 204); }
+
+.label-float .meuInput:required:invalid + .meuLabel:before {
+  content: '*' !important; }
+
+.label-float .meuInput:focus + .meuLabel,
+.label-float .meuInput:not(:placeholder-shown) + .meuLabel {
+  font-size: 10pt !important;
+  top: 0 !important;
+  color: #000 !important; }
+		
+  textarea {
+  border: 1px solid #fff !important;
+  border-radius: 0px !important;
+  box-shadow: 0px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 600;
+  color: #fff;
+  height: 150px !important;
+  width: 100% !important; }
+
+.meubtn {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: bolder; border: 2px solid rgb(49, 192, 204); padding: 10px; border-radius: 10px; transition: 0.5s;
+  float: right}
+.meubtn:hover{
+	border: 2px solid #000; color: rgb(49, 192, 204)
+}
+input{
+			width: 50% !important
+		}
+		textarea:focus{
+			background: rgba(0,0,0,0.0) !important
+		}
+h1,h2,h3,h4,p{
+			margin-top: 0px !important
+		}
+div{
+	margin-bottom: 0px !important
+}
+  
+.intacordeao{
+		padding: 10px
+	}
+
+a:hover{
+    text-decoration: none;
+}
+
+.imgRedes{
+	width: 5%; height: 5%;
+}
+.titulo1{ 
+	font-size: 40pt; font-weight: 700; font-family: 'Roboto', sans-serif; letter-spacing: 5px
+}
+.titulo2{
+    	font-size: 25pt; font-weight: 600; font-family: 'Roboto', sans-serif; letter-spacing: 5px
+}
+.titulo3{
+    	font-size: 20pt; font-weight: 600; font-family: 'Open Sans', sans-serif;  margin-top: 20px; margin-bottom: 20px; letter-spacing:  3px
+}
+.imgRedes{
+	width: 12%
+}
+.texto{
+	font-size: 15pt; margin-top: 20px; font-family: 'Open Sans', sans-serif;
+}
+.texto-ul{
+	font-size: 13pt; margin-left: 40px; font-family: 'Open Sans', sans-serif;
+}
+.mt-30{
+	margin-top: 20px
+}
+.topico, .topico2{
+      font-family: 'Roboto', sans-serif; font-size: 13pt; margin: 0px auto
+}
+.topico{
+    color:#ffff;
+}
+.topico2{
+    color:#000;
+}
+.imgTopicos{
+	width: 80%; margin-bottom: 30px
+}
+.MinhaFoto{
+    width: 80%; 
+}
+.simbolo{
+    font-size: 15pt; position: absolute; right: 20px; 
+}
+.seta{
+    font-size: 11pt; color: rgb(80, 220, 70);
+}
+.borda{
+    border: 1px solid #000; padding: 20px; margin-bottom: 20px; position: relative;
+}
+.pt{
+    padding-top: 20px
+}
+.footer{
+    margin-top: 10px; background-color:rgb(49, 192, 204) !important; width: 100%
+}
+.txtfooter{
+    font-family: 'Righteous', cursive; font-size: 12pt; color: #fff
+}
+.titulo-topico{
+    color: #000; font-weight: bolder
+}
+
+.borda-baixo{
+	 padding-bottom: 100px; margin-bottom: 50px 
+}
+.link:hover{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s; background-color: rgba(252, 192, 77, 0.5); color: black !important;
+}
+.link{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s; border-radius: 5px
+}
+.row{
+	padding: 15px 5px 0px 2px; 
+}
+
+.cena1{
+	background-image:url(../img/desenho.png); background-repeat: no-repeat; background-size: contain; height: 500px
+}
+.cena2{
+	background-image:url(../img/grafico.png); background-repeat: no-repeat; background-size: 100%; height: 500px; background-position: top left
+}
+
+.cena3{
+	background-image:url(../img/web2.png); background-repeat: no-repeat; background-size: contain; height: 500px
+}
+.white-text{
+	font-weight: bold
+}
+.mb-30{
+	margin-bottom: 50px
+}
+.ember, .rogerio, .fundiaria, .rede{
+	background-repeat: no-repeat; background-position: 10px center
+}
+.ember{
+	background-image: url(../img/ember.png); background-color: aqua
+}
+.rogerio{
+	background-image: url(../img/web.png); 
+}
+.fundiaria{
+	background-image: url(../img/fundiaria.png); 
+}
+.rede{
+	background-image: url(../img/rede.ico); 
+}
+.collapsible{
+	border: 0px !important; box-shadow: 0px !important; width: 80%
+}
+.collapsible-header{
+	transition: 0.5s; border: 0px !important
+}
+.collapsible-header:hover{
+	background-color: rgba(100,100,100,0.5)
+}
+.collapsible-body{
+	background-color: #d8d8d8
+}
+.visitar{
+	font-family: 'Righteous', cursive; font-size: 12pt; color: #000; transition: 0.5s
+}
+.visitar:hover{
+	color: #555
+}
+.fa{
+	margin-right: 20px
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+	.titulo1{ 
+	    font-size: 29pt; font-weight: 700; 
+    }
+	.menu2{
+      height: 60px; width: 60px; right: 5px; bottom: 5px
+    }
+	.formulario{
+      width: 100%; top: 50%; height: 90%; padding-top: 20px; 
+	  background-image: linear-gradient( -23deg, rgba(49, 192, 204, 0.9) 50%, #aaa 50% );
+    }
+	.imgTopicos{
+	    width: 100%; margin-bottom: 30px
+    }
+	
+}
+
+@media screen and (max-width: 600px) {
+	.titulo1{ 
+	    font-size: 17pt; font-weight: 700
+    }
+    .titulo2{
+    	font-size: 14pt; font-weight: 600
+    }
+    .titulo3{
+    	font-size: 12pt; font-weight: 600;
+    }
+    .texto{
+    	font-size: 12pt
+    }
+    .sociais{
+        font-size: 11pt; margin-top: 0px; color: white
+    }
+    .pt{
+		padding-top: 0px !important
+    }
+    .mt-30{
+    	margin-top: 30px
+    }
+    .MinhaFoto{
+        width: 60%; margin-bottom: 10px
+    }
+    .imgTopicos{
+	    width: 100%; margin-bottom: 30px
+    }
+	.footer{
+		position: relative
+	}
+	.ult-row{
+		margin-bottom: 10px
+	}
+	.imgRedes{
+	    width: 10%
+    }
+	.topico{
+		font-size: 11pt
+	}
+	.data{
+		font-size: 9pt
+	}
+	 .formulario{
+      width: 100%; top: 50%; height: 90%; padding-top: 20px; 
+	  background-image: linear-gradient( -23deg, rgba(49, 192, 204, 0.9) 50%, #aaa 50% );
+    }
+    .menu2{
+      height: 60px; width: 60px; right: 5px; bottom: 5px
+    }
+	
+	.borda-baixo{
+	     margin-bottom: 5px; padding-bottom: 10px
+    }
+	.intacordeao{
+		padding: 5px !important
+	}
+	.collapsible{
+	  width: 100%
+   }
+}
+
+
+
+  
+   
+    
