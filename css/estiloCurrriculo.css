@@ -1,6 +1,27 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 .acordeao {width:100%; margin-bottom: 100px}
 
+li{
+	border-bottom: 1px solid #d0d0d0; margin-bottom: 10px !important
+}
+
+.meuMenu{
+	position: absolute; bottom: 0px; right: 0px; position: fixed; width: 20%; z-index: 999
+}
+.meuBtn{
+	width: 100%; background: rgba(220,50,50,0.8) !important; color: #fff !important; font-weight: bold; transition: 0.5s !important
+}
+.meuBtn:hover{
+	background: #fff !important; color: rgba(220,50,50,0.8) !important;
+}
+#idPerfil, #idExp, #idForm, #idComp, #idInf, #idProj, #idObj, #idCont{
+	background-color: rgb(49, 192, 204); margin-bottom: 5px; padding: 3px; color: azure; font-family: 'Righteous', cursive; font-size: 12pt;
+	transition: 0.5s
+}
+#idPerfil:hover, #idExp:hover, #idForm:hover, #idComp:hover, #idInf:hover, #idProj:hover, #idObj:hover, #idCont:hover{
+	background-color: azure; color: rgb(49, 192, 204); 
+}
+
 .label-float {
   position: relative !important;
   padding-top: 15px !important;
@@ -200,10 +221,10 @@ a:hover{
 	border: 0px !important; box-shadow: 0px !important; width: 80%
 }
 .collapsible-header{
-	transition: 0.5s; border: 0px !important
+	transition: 0.5s; border: 0px !important; background-color: aqua !important
 }
 .collapsible-header:hover{
-	background-color: rgba(100,100,100,0.5)
+	background-color: rgb(49, 192, 204) !important; color: aliceblue; font-weight: bold
 }
 .collapsible-body{
 	background-color: #d8d8d8
@@ -295,6 +316,15 @@ a:hover{
 	.collapsible{
 	  width: 100%
    }
+    .meuMenu{
+	  width: 50%; 
+   }
+	.divRedes{
+		margin-top: 50px
+	}
+	.texto-ul{
+	   font-size: 11pt; margin-left: 10px; font-family: 'Open Sans', sans-serif;
+     }
 }
 
 

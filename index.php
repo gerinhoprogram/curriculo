@@ -28,10 +28,12 @@
 	<link type="text/css" href="css/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
 
 	<!--	javascript -->	
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="js/modernizr.js"></script> 
 	<script type="text/javascript" src="js/jquery-min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.8.18.custom-core-effects.min.js"></script>
+	
 	<script src="js/script.js"></script>	
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.js"></script>
 	
@@ -48,6 +50,20 @@
 
 </head>
 <body>
+	<div class="meuMenu">
+	<a class='dropdown-trigger btn meuBtn' href='#' data-target='dropdown1'>
+		<i class="fa fa-bars fa-3x" aria-hidden="true"></i>MENU</a>
+	</div>
+					  <ul id='dropdown1' class='dropdown-content' style="padding: 10px">
+						<li id="idPerfil">Perfil</li>
+						<li id="idExp">Experiência Profissional</li>
+						<li id="idForm">Formação</li>
+						<li id="idComp">Formação Complementar</li>
+						<li id="idInf">Informática, Habilidades e Qualificações</li>
+						<li id="idProj">Últmos projetos</li>
+						<li id="idObj">Objetivo</li>
+						<li id="idCont">Contato</li>
+					  </ul>
 	
 <!--             cabeçalho-->
             <div class="row mt-30 img-fundo">
@@ -66,7 +82,7 @@
             </div>
     
 <!--            dados / perfil-->
-            <div class="row mt-30">
+            <div class="row mt-30" id="perfil">
                   <div class="large-3 medium-4 small-12 columns text-left" style=""><div class="row"><div class="col s4 l12"> 
 					  <img src="img/dados.png" class="imgTopicos" alt="Dados pessoais de Rogério" title="Dados pessoais de Rogério"></div><div class="col s8 l12"><h3 class="titulo2 show-for-small-only">Perfil</h3></div></div>
                   </div>
@@ -82,23 +98,25 @@
              </div>
            
     <!--            experiencia -->
-            <div class="row mt-30">
+            <div class="row mt-30" id="experiencia">
                   <div class="large-3 medium-4 small-12 columns text-left"><div class="row"><div class="col s4 l12">
 					  <img src="img/prof.png" class="imgTopicos" alt="Experiência profissional" title="Experiência profissional"></div><div class="col s8 l12"><h3 class="titulo2 show-for-small-only">Experiência profissional</h3></div></div>
                   </div>
                   <div class="large-9 medium-8 small-12 columns">
-					  <h3 class="titulo2 hide-for-small-only">Experiência profissional</h3>
 					  <div class="borda-baixo">
+						  <h3 class="titulo2 hide-for-small-only">Experiência profissional</h3>
 					  <h4 class="titulo3">Evve - comunicação</h4>
 						  <div class="acordeao">
 							     <h3 class="topico" style="margin-bottom: 10px">
 									  <a href="#">Progamador Front-End | Jul/2019 - Jan/2020</a>
 								 </h3>	
                         		 <div class="intacordeao">
+									  <p class="topico titulo-topico">Descrição</p>
 									  <p class="texto" >
 										  Colocar em prática tudo o que a criação/ux desenvolve, montando assim a parte visual de sites e aplicativos
 									  </p>
-									  <p class="texto"><strong>Conhecimentos adquiridos</strong></p>
+									 <hr>
+									  <p class="topico titulo-topico">Conhecimentos adquiridos</p>
 									  <ul class="texto-ul">
 										  <li>UX (User Experience);</li>
 										  <li>HTML5, CSS3 e JavaScript;</li>
@@ -120,10 +138,12 @@
 									  <a href="#">Assist. de Estoque Jr. | Mai/2015 - jul/2018</a>
 							   </h3>
 							   <div class="intacordeao">
+								      <p class="topico titulo-topico">Descrição</p>
 									  <p class="texto">
 										Monitorar estoque da empresa via sistema ERP. Utilização do Pacote Office, distribuição de tarefas para subordinados.
 									  </p>
-									  <p class="texto"><strong>Conhecimentos adquiridos</strong></p>
+								      <hr>
+									  <p class="topico titulo-topico">Conhecimentos adquiridos</p>
 									  <ul class="texto-ul">
 										<li>Pacote office Excel, Word, PowerPoint, Outlook;</li>
 										<li>Navegação no ERP Gix SHX;</li>
@@ -140,10 +160,12 @@
 									<a href="#">Assist. Prevenção e Perdas | Nov/2011 - mai/2015</a>
 							   </h3>
 						  	   <div class="intacordeao">
+								      <p class="topico titulo-topico">Descrição</p>
 									  <p class="texto">
 											Inspecionar estoque tanto quanto o armazenamento correto de cada produto evitando quebras, quanto ao seu prazo de validade utilizando sistema FIFO. Realizar inventário afim de, sincronizar estoque físico e sistêmico.
 									  </p>
-									  <p class="texto"><strong>Conhecimentos adquiridos</strong></p>
+								      <hr>
+									  <p class="topico titulo-topico">Conhecimentos adquiridos</p>
 										  <ul class="texto-ul">
 											  <li>Conhecimento em diversos tipos de produtos para material de construção;</li>
 											  <li>Diferentes tipos de estruturas de armazenagem para cada tipo de produto;</li>
@@ -158,10 +180,11 @@
 							      <a href="#">Repositor Abr/2010 - nov/2011</a>
 						      </h3>
 							  <div class="intacordeao">
+								  <p class="topico titulo-topico">Descrição</p>
 								  <p class="texto">
 								   	Exercer a função de deixar os produtos mais visíveis para os clientes, com criatividade e estratégias de marketing. Neste período fiquei responsável no setor de conexões em PVC.
-								  </p>
-								  <p class="texto"><strong>Conhecimentos adquiridos</strong></p>
+								  </p><hr>
+								  <p class="topico titulo-topico">Conhecimentos adquiridos</p>
 								  <p class="texto">
 									  Funcionalidades de tubos e conexões em PVC (marcas Tigre e Amanco) para água e esgoto,
 									  água quente e fria, soldável e roscável, polegadas e ângulos além de saber diferenciar cada item e pra que cada um serve. Podendo então, indicar soluções para resolução de problemas dos clientes.
@@ -174,7 +197,7 @@
             </div>
 
 <!--            formacao-->
-            <div class="row mt-30">
+            <div class="row mt-30" id="formacao">
                   <div class="large-3 medium-4 small-12 columns text-left"><div class="row"><div class="col s4 l12">
                     <img src="img/formado.png" class="imgTopicos" alt="Escolaridade" title="Escolaridade"></div><div class="col s8 l12">
 					  <h3 class="titulo2 show-for-small-only">Formação</h3></div></div>
@@ -187,18 +210,19 @@
 							  <a href="#">UMC | Graduação em Anál. e Desenv. de Sistemas | Jan/2018 - dez/2019</a>
 						  </h3>
 						  <div class="intacordeao">
+							  <p class="topico titulo-topico">Descrição</p>
 									  <p class="texto">
 											 Analista-programador que pode atuar em projeto, programação, instalação-configuração e manutenção de softwares em empresas de qualquer porte.
-									  </p>
-									  <p class="texto">                      
-										  <a href="pdf/historico_escolar.pdf" target="_blank" alt="Histórico escolar" title="Histórico escolar">
-												<img src="img/icon_pdf.gif">
+									  </p><hr>
+									  <p>                      
+										  <a href="pdf/historico_escolar.pdf" target="_blank" alt="Histórico escolar" title="Histórico escolar"  class="visitar">
+												<i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>
 												Histórico escolar
 										  </a>
 									  </p>
-									  <p class="texto">
-										  <a href="pdf/conclusao.pdf" target="_blank" title="PDF Certidão de Conclusão" alt="PDF Certidão de Conclusão">
-											  <img src="img/icon_pdf.gif">
+									  <p>
+										  <a href="pdf/conclusao.pdf" target="_blank" title="PDF Certidão de Conclusão" alt="PDF Certidão de Conclusão"  class="visitar">
+											  <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>
 											  Certificado de conclusão
 										  </a>
 									  </p>							  
@@ -208,28 +232,26 @@
 								  <a href="#">UMCTEC | Técnico em logística | Fev/2017 - Dez/2017</a>
 							  </h3>
 						      <div class="intacordeao">
-									  <p class="texto">
-											 Algumas das disciplinas abordadas
-									  </p>
+									  <p class="topico titulo-topico">Descrição</p>
 											 <ul class="texto-ul">
 												 <li>Gestão Ambiental;</li>
 												 <li>Comércio Exterior;</li>
 												 <li>Ciclo de Suprimentos;</li>
-												 <li> Empreendedorismo;</li>
+												 <li>Empreendedorismo;</li>
 												 <li>Gestão de Expedição e Distribuição;</li>
 												 <li>Legislação e Tributação;</li>
 												 <li>Logística Reversa;</li>
 												 <li>Normas Regulamentadoras de Segurança em Logística.</li>
-								             </ul>
-								      <p class="texto">
-											  <a href="pdf/umctec_1_semestre.pdf" target="_blank" title="Notas 1º semestre UMCTEC" alt="Notas 1º semestre UMCTEC">
-											  <img src="img/icon_pdf.gif">
+								             </ul><hr>
+								      <p>
+											  <a href="pdf/umctec_1_semestre.pdf" target="_blank" title="Notas 1º semestre UMCTEC" alt="Notas 1º semestre UMCTEC"  class="visitar" class="visitar">
+											  <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>
 											  1º semestre Técnico em Logística
 										  </a>
 									  </p>
-								      <p class="texto">
-											  <a href="pdf/umctec_2_semestre.pdf" target="_blank" title="Notas 2º semestre UMCTEC" alt="Notas 1º semestre UMCTEC">
-											  <img src="img/icon_pdf.gif">
+								      <p>
+											  <a href="pdf/umctec_2_semestre.pdf" target="_blank" title="Notas 2º semestre UMCTEC" alt="Notas 1º semestre UMCTEC" class="visitar">
+											  <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>
 											  2º semestre Técnico em Logística
 										  </a>
 									  </p>
@@ -240,7 +262,7 @@
             </div>
     
 <!--            formação complementar -->
-            <div class="row mt-30">
+            <div class="row mt-30" id="complementar">
                   <div class="large-3 medium-4 small-12 columns text-left"><div class="row"><div class="col s4 l12">
 					  <img src="img/comp.png" class="imgTopicos" alt="Formação complementar" title="Formação complementar"></div><div class="col s8 l12"><h3 class="titulo2 show-for-small-only">Formação complementar</h3></div></div>
                   </div>
@@ -323,7 +345,7 @@
             </div>
             
 <!--       habilidades  -->
-            <div class="row mt-30">
+            <div class="row mt-30" id="informatica">
                   <div class="large-3 medium-4 small-12 columns text-left"><div class="row"><div class="col s4 l12"> 
 					  <img src="img/hab.png" class="imgTopicos" alt="Habilidades complementares" title="Habilidades complementares"></div><div class="col s8 l12"> <h3 class="titulo2 show-for-small-only">Informática, Habilidades e Qualificações</h3></div></div>
                   </div>
@@ -376,7 +398,7 @@
             </div>
 
 <!--      ultimos projetos -->
-             <div class="row mt-30 ">
+             <div class="row mt-30" id="projetos">
                   <div class="large-3 medium-4 small-12 columns text-left"><div class="row"><div class="col s4 l12"> 
 					  <img src="img/projetos.png" class="imgTopicos" alt="Habilidades complementares" title="Habilidades complementares"></div><div class="col s8 l12"><h3 class="titulo2 show-for-small-only">Últimos projetos</h3></div></div>
                   </div>
@@ -474,7 +496,7 @@
             </div>
 	
 <!--            Objetivo-->
-            <div class="row mt-30">
+            <div class="row mt-30" id="objetivo">
                   <div class="large-3 medium-4 small-12 columns text-left">
 					<div class="row"><div class="col s4 l12">    
                     <img src="img/objetivo.png" class="imgTopicos" alt="Objetivo" title="Objetivo"></div><div class="col s8 l12"><h3 class="titulo2 show-for-small-only">Objetivo</h3></div></div>
@@ -490,7 +512,7 @@
             </div>	
 
 <!--     contato-->
-	<div class="row mt-30">
+	<div class="row mt-30" id="contato">
                   <div class="large-3 medium-4 small-12 columns text-left">
 					<div class="row"><div class="col s4 l12">  
                     <img src="img/contato.png" class="imgTopicos" alt="Contato" title="Contato"></div><div class="col s8 l12">
@@ -516,7 +538,7 @@
 								  <button type="submit" class="pure-button meubtn">ENVIAR</button>
 							  </form>
 						  </div>
-						  <div class="col l6 s12 m6">
+						  <div class="col l6 s12 m6 divRedes">
 							  <p>
 								<a href="mailto:rogerio_furquim@hotmail.com?Subject=Curriculo online" target="_blank" alt="Envie um e-mail para rogerio_furquim@homtail.com" title="Envie um e-mail para rogerio_furquim@homtail.com">
 								    <span class="visitar"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
